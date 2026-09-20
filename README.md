@@ -4,7 +4,7 @@ A local-first IT help desk workspace built with Next.js, React, SQLite, and Gemi
 
 ## Screenshots
 
-### Dashboard
+### Dashboard (Current)
 
 ![Northstar IT dashboard](public/screenshots/dashboard.png)
 
