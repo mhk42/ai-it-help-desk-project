@@ -66,9 +66,9 @@ AI analysis is performed by the server route [`app/api/analyze-ticket/route.ts`]
 
 ```mermaid
 flowchart LR
-  UI[Ticket detail panel] -->|POST title, description, device, errorText| Route[/api/analyze-ticket]
-  Route -->|GEMINI_API_KEY| Gemini[Gemini API]
-  Gemini -->|JSON summary, causes, steps, severity, confidence| Route
+  UI["Ticket detail panel"] -->|POST ticket context| Route["/api/analyze-ticket"]
+  Route -->|server-side API key| Gemini["Gemini API"]
+  Gemini -->|structured JSON| Route
   Route --> UI
 ```
 
